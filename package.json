@@ -38,12 +38,13 @@
   "bugs": {
     "url": "https://github.com/gaurav-7385/react-tailwind-css-starter-pack/issues"
   },
-  "scripts": {
+"scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "server": "cd server && npm run dev",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+    "server": "cd server && npm start",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server:dev\"",
+    "server:dev": "cd server && npm run dev"
   },
   "eslintConfig": {
     "extends": [
